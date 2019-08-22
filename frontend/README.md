@@ -170,3 +170,95 @@ $ yarn add eslint-import-resolver-babel-plugin-root-import -D
 ```sh
 $ yarn add react-router-dom
 ```
+
+---
+
+## Configurando o Redux Saga
+
+1. Crie uma pasta src/store/index.js
+2. Crie uma pasta src/store/ducs/index.js
+3. Crie uma pasta src/store/sagas/index.js
+
+### Instale as dependências do Redux, saga e o axios
+
+```sh
+$ yarn add redux react-redux redux-saga axios
+```
+
+### Implementação - src/store/index.js
+
+```js
+import { createStore, applyMiddleware } from "redux";
+import createSagaMiddleware from "redux-saga";
+
+import rootReducer from "./ducks";
+import rootSaga from "./sagas";
+
+const sagaMiddleware = createSagaMiddleware();
+
+const middlwares = [sagaMiddleware];
+
+const store = createStore(rootReducer, applyMiddleware(...middlwares));
+
+sagaMiddleware.run(rootSaga);
+
+export default store;
+```
+
+---
+
+### Implementação - src/store/sagas/index.js
+
+```js
+import { all } from "redux-saga/effects";
+
+export default function* rootSaga() {
+  return yield all([]);
+}
+```
+
+---
+
+### Implementação - src/store/ducks/index.js
+
+```js
+import { combineReducers } from "redux";
+
+export default combineReducers({
+  test: () => []
+});
+```
+
+---
+
+### Após a configuração inicial, é necessário passar para o restante da aplicação:
+
+#### Onde: App.js
+
+```js
+import React from "react";
+import { Provider } from "react-redux";
+
+import store from "./store";
+import Routes from "./routes";
+
+const App = () => (
+  <Provider store={store}>
+    <Routes />
+  </Provider>
+);
+
+export default App;
+```
+
+### Fim da configuração do Redux/Sagas
+
+---
+
+### Instalando a dependência para estilização (StyledComponents)
+
+```sh
+$ yarn add styled-components
+```
+
+### Passo seguinte, crie uma pasta src/styles
