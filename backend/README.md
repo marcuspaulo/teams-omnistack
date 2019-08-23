@@ -16,6 +16,11 @@ Use the adonis command to install the blueprint
 adonis new yardstick --api-only
 ```
 
+# Executando o projeto
+```sh
+$ adonis serve --dev
+```
+
 or manually clone the repo and then run `npm install`.
 
 ### Migrations
