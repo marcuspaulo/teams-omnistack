@@ -4,7 +4,7 @@
 ![Lista de Repositórios](../frontend/images/login.png)
 
 #Tela de Login - com erro de Autenticação
-![Lista de Repositórios](../frontend/images/login-error.png)
+![Lista de Repositórios](../frontend/images/error-login.png)
 
 #Instalação recomenda para gerenciamento de pacotes: Yarn https://yarnpkg.com/pt-BR/docs/install#windows-stable
 
