@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
+import api from '../../services/api';
 
 // import { Container } from './styles';
 
-const Main = () => <div><h1>Página Principal</h1></div>;
+export default class Main extends Component {
 
-export default Main;
+  componentDidMount() {
+    api.get('/teste/');
+  }
+
+  render() {
+    return <h1>Dashboard</h1>
+  }
+}
