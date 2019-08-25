@@ -1,7 +1,10 @@
 # OmniStack - Módulo Frontend - Aplicação em ReactJS
 
-#Tela do Projeto
-![Lista de Repositórios](/images/)
+#Tela de Login
+![Lista de Repositórios](/images/login.png)
+
+#Tela de Login - com erro de Autenticação
+![Lista de Repositórios](/images/login-error.png)
 
 #Instalação recomenda para gerenciamento de pacotes: Yarn https://yarnpkg.com/pt-BR/docs/install#windows-stable
 
@@ -321,4 +324,14 @@ $ yarn add prop-types
 
 ```sh
 $ yarn add react-redux-toastr
+```
+
+---
+
+### Componente para trabalhar com rotamento com o Saga
+
+Conectar o React-Router-dom com o redux
+
+```sh
+$ yarn add connected-react-router history
 ```
