@@ -1,7 +1,7 @@
 # OmniStack - Módulo Frontend - Aplicação em ReactJS
 
 #Tela de Login
-![Lista de Repositórios](../images/login.png)
+![Lista de Repositórios](../../images/login.png)
 
 #Tela de Login - com erro de Autenticação
 ![Lista de Repositórios](./images/login-error.png)
