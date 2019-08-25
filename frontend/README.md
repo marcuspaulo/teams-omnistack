@@ -314,3 +314,11 @@ export const reducer = createReducer(INITIAL_STATE, {
 ```sh
 $ yarn add prop-types
 ```
+
+---
+
+### Componente para mensagem React-Redux-Toastr
+
+```sh
+$ yarn add react-redux-toastr
+```
