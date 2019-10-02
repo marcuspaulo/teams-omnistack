@@ -13,6 +13,7 @@ import { Container, TeamList, Team, NewTeam, Logout } from './styles';
 
 class TeamSwitcher extends Component {
 
+  // eslint-disable-next-line react/static-property-placement
   static propTypes = {
     getTeamsRequest: PropTypes.func.isRequired,
     selectTeam: PropTypes.func.isRequired,
