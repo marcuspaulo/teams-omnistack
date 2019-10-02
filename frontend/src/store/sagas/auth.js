@@ -22,3 +22,10 @@ export function* signIn({ email, password }) {
     );
   }
 }
+
+export function* signOut() {
+  localStorage.removeItem('@Omni:token');
+  localStorage.removeItem('@Omni:team');
+
+  yield put(push('/signin'));
+}
